@@ -36,4 +36,4 @@ elif utype == "c":
 elif utype == "r":
     print(f"region{ux},{uy} contains blocks {ux*512},{uy*512} to {(ux+1)*512-1},{(uy+1)*512-1} and contains chunks {ux*32},{uy*32} to {(ux+1)*32-1},{(uy+1)*32-1}")
 
-# input("Press enter to close the program")
+input("Press enter to close the program")
