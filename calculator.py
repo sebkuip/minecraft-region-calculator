@@ -15,7 +15,7 @@ print("Please enter the coordinates you want to calculate following the format `
 while True:
     uinput = input("Input: ").strip().lower()
 
-    if not re.search(r"(^[bcr][.,\s]-?\d+[.,\s]-?\d+$)|(^b[.,\s]-?\d+[.,\s]-?\d+[.,\s]-?\d+$)", uinput):
+    if not re.search(r"^(([bcr][.,\s]-?\d+[.,\s]-?\d+)|(b[.,\s]-?\d+[.,\s]-?\d+[.,\s]-?\d+))$", uinput):
     # ^ start of line [bcr] for either of the 3 types. [.,\s] for seperators. -? for possible negative. \d+ for any lenght number. $ for end of line. | to split the regex in 2 parts, surounded with () each to group them.
         print("This isn't a valid input. Please follow the format `T.X.Z` or `B.X.Y.Z` for input. For more details, consult the readme")
         continue
